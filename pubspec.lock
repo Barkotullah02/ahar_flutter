@@ -83,14 +83,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  horizontal_scroll_view:
+  font_awesome_flutter:
     dependency: "direct main"
     description:
-      name: horizontal_scroll_view
-      sha256: "4063046ede7a0fef52ec1df13131e95025f2796975a3dbc52853353436b2f754"
+      name: font_awesome_flutter
+      sha256: d3a89184101baec7f4600d58840a764d2ef760fe1c5a20ef9e6b0e9b24a07a3a
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "10.8.0"
   leak_tracker:
     dependency: transitive
     description:
@@ -155,14 +155,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.0"
-  scrollable_table_view:
-    dependency: "direct main"
-    description:
-      name: scrollable_table_view
-      sha256: "4a39767fdf9e76556e7c7bccfa195f5d2b929a188fe2fc7803b3a70e6999fccc"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.3"
   sky_engine:
     dependency: transitive
     description: flutter

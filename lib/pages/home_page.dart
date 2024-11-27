@@ -1,4 +1,6 @@
+import 'package:ahar/layouts/expanded_text.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../layouts/carousel.dart';
 
 class HomePage extends StatefulWidget {
@@ -415,7 +417,185 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-
+                const SizedBox(
+                  height: 30,
+                ),
+                SizedBox(
+                  width: 370,
+                  height: 100,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF7F7F7),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: SizedBox(
+                            child: Image(
+                                image: AssetImage('images/online_food_ordering.png'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                            padding: EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                  'Online Food Ordering',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                              ),
+                              Text(
+                                  'Eating a wide variety of nutritious\nHealthy  foods',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                SizedBox(
+                  width: 370,
+                  height: 100,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF7F7F7),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: SizedBox(
+                            child: Image(
+                              image: AssetImage('images/healthy_food.png'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '100% Healthy Food',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                              ),
+                              Text(
+                                'Eating a wide variety of nutritious\nHealthy  foods',
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const SizedBox(
+                  width: 370,
+                  child: Text(
+                      'Frequently Asked Questions',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const ExpandedText(title: 'Where can I buy Pizza?', text: '',),
+                const SizedBox(
+                  height: 20,
+                ),
+                const ExpandedText(title: 'Where to collect the food near me?', text: '',),
+                const SizedBox(
+                  height: 20,
+                ),
+                const ExpandedText(title: 'Can I use Credit Card to pay?', text: '',),
+                const SizedBox(
+                  height: 30,
+                ),
+                const ExpandedText(title: 'How long is the delivery time?', text: '',),
+                const SizedBox(
+                  height: 30,
+                ),
+                Container(
+                  color: const Color(0xFF363636),
+                  width: 440,
+                  height: 300,
+                  child: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 150,
+                        child: Image(
+                            image: AssetImage('images/logo_white.png'),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      SizedBox(
+                        height: 100,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              FontAwesomeIcons.facebook,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Icon(
+                              FontAwesomeIcons.twitter,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Icon(
+                              FontAwesomeIcons.instagram,
+                              color: Colors.white,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Text(
+                          'Copyrighted © 2024 ahar',
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
             ]
             ),
           ],
